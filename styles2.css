@@ -1,0 +1,97 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif; /* Default font for the whole page */
+    background-color: #f4f4f4; /* Light grey background for the whole page */
+    color: #333; /* Dark grey text for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for centered content */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the content */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle shadow for 3D effect */
+    border: 1px solid #aba5a5; /* Light grey border */
+}
+
+/* Styling for all headings */
+h1, h2 {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    color: #d40000; /* NBA red for headings */
+    font-weight: bold; /* Bold font for all headings */
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Ordered and unordered lists styling */
+ol, ul {
+    padding-left: 20px; /* Indent items */
+}
+
+/* Navigation within the page */
+a {
+    color: #006bb6; /* NBA blue for links */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover for better interactivity */
+}
+
+/* Specific styling for video and tableau frames */
+#video, #tableau {
+    border: 2px solid #ccc; /* Light gray border around video and tableau */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #fafafa; /* Very light grey background */
+}
+
+/* Background section styling */
+.background {
+    background-color: #e0e0e0; /* Light grey background */
+    padding: 20px;
+    border-top: 3px solid #d40000; /* Bold red top border */
+}
+
+img {
+    display: block; /* Ensures the image does not have inline properties */
+    margin: 10px 0; /* Space around the image */
+    width: auto; /* Maintain original aspect ratio */
+    max-height: 50px; /* Limiting height but not width */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+    .container {
+        width: 95%; /* More width for smaller screens */
+    }
+
+    h1, h2 {
+        font-size: 1.5em; /* Smaller text on small devices */
+    }
+}
+.top-right-links {
+    text-align: right; /* Aligns the links to the right */
+    padding: 10px 20px; /* Adds some padding around the links */
+    position: fixed; /* Makes the navigation fixed during scrolling */
+    top: 0; /* Positions it at the top of the page */
+    right: 0; /* Positions it on the right side of the page */
+    width: 100%; /* Ensures it stretches across the top */
+    background-color: #ffffff; /* Gives a background color */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    z-index: 1000; /* Ensures it stays on top of other content */
+}
+
+.top-right-links a {
+    margin-left: 20px; /* Adds spacing between the links */
+    color: #006bb6; /* Sets the link color */
+    font-family: 'Arial', sans-serif; /* Ensures consistent font */
+    text-decoration: none; /* Removes underline from links */
+}
+
+.top-right-links a:hover {
+    text-decoration: underline; /* Adds underline on hover for better interactivity */
+}
