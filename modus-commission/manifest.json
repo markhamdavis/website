@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Modus- Commission",
+  "version": "1.0.0",
+  "description": "Shows your Brokers Alliance first-year commission % next to each product's Apply button on the term life quoter.",
+  "permissions": ["storage"],
+  "action": {
+    "default_title": "Modus- Commission",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://brokersalliance.com/*", "*://*.brokersalliance.com/*"],
+      "js": ["data.js", "carriers.js", "content.js"],
+      "css": ["content.css"],
+      "all_frames": true,
+      "run_at": "document_idle"
+    }
+  ]
+}
